@@ -1,0 +1,17 @@
+pandas
+numpy
+nltk
+scikit-learn
+matplotlib
+requests
+jupyter
+ipykernel
+tqdm
+seaborn
+
+
+# Notebook (01_data_exploration.ipynb) → change collector.load_data(sample_size=45000) to your desired size (flexible, recommended).
+
+# Method (data_collector.py) → update def load_data(self, sample_size=45000): to a new default (e.g. 100000, 1600000, or None).
+
+# Test section (data_collector.py) → change the bottom call collector.load_data(sample_size=45000) to match your dataset size.

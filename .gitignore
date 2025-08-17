@@ -1,0 +1,67 @@
+# Virtual Environment
+sentiment_analysis_env/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Datasets and Large Files (NEW ADDITIONS)
+data/raw/
+data/processed/
+*.csv
+*.zip
+*.gz
+*.tar.gz
+*.json
+*.parquet
+
+# Model Files (for later steps)
+models/trained_models/
+models/vectorizers/
+*.pkl
+*.joblib
+
+# Logs and temporary files
+*.log
+*.tmp
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.production
