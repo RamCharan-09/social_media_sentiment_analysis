@@ -1,19 +1,36 @@
-Data Cleaning
+# 🕵️ Brand Monitoring Sentiment Analysis System
 
-The dataset was carefully preprocessed to ensure high quality input for modeling. The following steps were applied:
+A machine learning project for **classifying social media posts** as **positive** or **negative sentiment** to support brand monitoring.
 
-Removed all URLs, mentions, and hashtags
+---
 
-Removed emojis and special characters
 
-Converted text to lowercase (normalization)
+### Step 1: Data Collection & Cleaning
+- **Dataset:** Sentiment140 (1.6M tweets)  
+- **Sample Size:** 100,000 balanced tweets (50K positive + 50K negative)  
 
-Applied lemmatization for accurate word representation
+**Text Cleaning Pipeline:**
+- Remove URLs, mentions, hashtags, emojis  
+- Normalize text (lowercasing, lemmatization)  
+- Remove stopwords and irrelevant content  
+- Handle missing values and duplicates  
 
-Removed stopwords using a comprehensive list
+**Output:** ~85,000 clean tweets ready for ML  
 
-Handled missing values appropriately
+---
 
-Removed duplicate entries
+### Step 2: Feature Engineering
+- **TF-IDF Vectorization:** Convert text to numerical features  
+- **Feature Matrix:** 85K tweets × 10K features  
 
-Ensured class balance with 100,000 tweets (50,000 positive and 50,000 negative)
+**Vocabulary Control:**
+- Top 10,000 most important words/phrases  
+- Minimum frequency: 5 occurrences  
+- Maximum frequency: 95% of documents  
+- N-grams: Unigrams + bigrams  
+
+**Data Split:**
+- 80% training (68K)  
+- 20% testing (17K)  
+
+**Feature Analysis:** Importance ranking and visualization tools  
