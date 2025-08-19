@@ -54,7 +54,7 @@ class DataCleaner:
     
     def clean_dataset(self, df):
         """Clean 100K tweets with full pipeline"""
-        print("🧹 Starting complete cleaning pipeline for 100K tweets...")
+        print(" Starting complete cleaning pipeline for 100K tweets...")
         
         # Handle missing values
         print(" Handling missing values...")
@@ -95,8 +95,8 @@ class DataCleaner:
         """Save cleaned data"""
         df.to_csv(CLEANED_DATA_FILE, index=False)
         file_size = os.path.getsize(CLEANED_DATA_FILE) / (1024**2)
-        print(f"💾 Saved {len(df):,} tweets to: {CLEANED_DATA_FILE}")
-        print(f"📏 File size: {file_size:.1f}MB")
+        print(f" Saved {len(df):,} tweets to: {CLEANED_DATA_FILE}")
+        print(f" File size: {file_size:.1f}MB")
 
 if __name__ == "__main__":
     from data_collector import DataCollector
@@ -111,6 +111,6 @@ if __name__ == "__main__":
         test_data = data.head(1000)
         cleaned = cleaner.clean_dataset(test_data)
         
-        print(f"\n🔍 Example:")
+        print(f"\n Example:")
         print(f"BEFORE: {data.iloc[0]['text']}")
         print(f"AFTER:  {cleaned.iloc['cleaned_text']}")
