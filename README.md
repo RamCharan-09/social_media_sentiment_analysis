@@ -33,4 +33,8 @@ A machine learning project for **classifying social media posts** as **positive*
 - 80% training (68K)  
 - 20% testing (17K)  
 
-**Feature Analysis:** Importance ranking and visualization tools  
+**Feature Analysis:** Importance ranking and visualization tools 
+
+
+##  License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
