@@ -1,4 +1,4 @@
-# 🕵️ Brand Monitoring Sentiment Analysis System
+#  Brand Monitoring Sentiment Analysis System
 
 A machine learning project for **classifying social media posts** as **positive** or **negative sentiment** to support brand monitoring.
 
