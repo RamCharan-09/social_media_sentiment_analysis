@@ -8,4 +8,4 @@ jupyter
 ipykernel
 tqdm
 seaborn
-
+vaderSentiment
