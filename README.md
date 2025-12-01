@@ -36,5 +36,16 @@ A machine learning project for **classifying social media posts** as **positive*
 **Feature Analysis:** Importance ranking and visualization tools 
 
 
+To run this file 
+cd /c/Res_Projects/social_media_sentiment_analysis
+
+# Activate your virtual environment (if not already)
+source sentiment_analysis_env/Scripts/activate
+
+# Run the live integration script
+python src/live/local_stream.py
+
+
+
 ##  License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
