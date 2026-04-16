@@ -65,3 +65,6 @@ models/vectorizers/
 .env
 .env.local
 .env.production
+
+# Project documentation
+docs/
